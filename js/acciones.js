@@ -13,8 +13,8 @@ $(document).ready(function(e){
 	audio.preloadFX('la','audio/LA.mp3', function(){},function (e) {alert('Error '+e);});
 	audio.preloadFX('si','audio/SI.mp3', function(){},function (e) {alert('Error '+e);});
 	$('.nota').bind('touchstart',function(){$(this).addClass('tocada');
-	audio.play($(this).attr('id'));});
-	$('.nota').bind('touchend',function(){ $(this).removeClass ('tocada');
+	audio.play($(this).attr('id'));})
+	.bind('touchend',function(){ $(this).removeClass ('tocada');
 	});
 	},false); //deviceready
 });//ready
